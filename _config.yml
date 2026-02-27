@@ -159,7 +159,7 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: false
   projects:
     output: true
   teachings:
@@ -239,6 +239,10 @@ defaults:
       sitemap: false
   - scope:
       path: "_posts"
+    values:
+      published: false
+  - scope:
+      path: "_news"
     values:
       published: false
 
