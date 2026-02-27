@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-01-30
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+One paper accepted at <a href="https://2025.ieee-icra.org/" target="_blank" rel="noopener">ICRA 2025</a>.
