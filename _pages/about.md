@@ -17,7 +17,7 @@ profile:
         | <a href="https://github.com/kmk97"><b>GitHub</b></a>
       </p>
     </div>
-selected_papers: false # show all publications in page content
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -38,9 +38,5 @@ My research interests lie in computer vision and robotics, with a primary focus 
 Recently, I have been expanding my research toward Vision-Language-Action (VLA) models and autonomous navigation, aiming to bridge perception, reasoning, and decision-making in embodied systems. 
 
 My goal is to develop intelligent robotic systems capable of robust perception and adaptive behavior in complex real-world environments.
-
-## Publications
-
-{% bibliography %}
 
 
