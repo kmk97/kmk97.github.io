@@ -2,14 +2,18 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 
 
 profile:
   align: right
-  image: mangyukong.jpg
+  image: mangyukong2.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    
+    <p align="center"> mangyu0929@yonsei.ac.kr</p>
+    <p align="center"> 50, Yonsei-ro, Seodaemun-gu, Seoul, Republic of Korea
+    | <a href="https://scholar.google.com/citations?user=zVzxad8AAAAJ&hl=ko"><b>Google Scholar</b></a>
+    | <a href="https://github.com/kmk97"><b>Github</b></a>
+    </p>
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
@@ -24,8 +28,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am Mangyu Kong, a graduate student in Electrical and Electronic Engineering at Yonsei University, where I also received my B.S. degree in the same field. My research interests lie in computer vision and robotics, with a primary focus on 3D vision (3D Gaussian Splatting), SLAM, localization, and multi-robot systems.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Recently, I have been expanding my research toward Vision-Language-Action (VLA) models and autonomous navigation, aiming to bridge perception, reasoning, and decision-making in embodied systems. My goal is to develop intelligent robotic systems capable of robust perception and adaptive behavior in complex real-world environments.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
