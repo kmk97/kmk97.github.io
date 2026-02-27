@@ -28,11 +28,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-one-paper-accepted-at-icra-2025",
+          title: 'One paper accepted at ICRA 2025.',
           description: "",
-          section: "News",},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-one-paper-has-been-accepted-to-cvpr-2026",
+          title: 'One paper has been accepted to CVPR 2026.',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
