@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-04-13'
+  last_updated: '2026-04-20'
 papers:
   zVzxad8AAAAJ:-f6ydRqryjwC:
-    citations: 15
-    title: 'Dgs-slam: Gaussian splatting slam in dynamic environment'
+    citations: 16
+    title: 'DGS-SLAM: Gaussian Splatting SLAM in Dynamic Environment'
     year: '2024'
   zVzxad8AAAAJ:IWHjjKOFINEC:
     citations: 2
