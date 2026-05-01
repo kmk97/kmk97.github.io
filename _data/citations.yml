@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-24'
+  last_updated: '2026-05-01'
 papers:
   zVzxad8AAAAJ:-f6ydRqryjwC:
     citations: 17
@@ -14,7 +14,7 @@ papers:
     title: 'RoomNeRF: Representing Empty Room as Neural Radiance Fields for View Synthesis'
     year: '2023'
   zVzxad8AAAAJ:e5wmG9Sq2KIC:
-    citations: 0
+    citations: 1
     title: Rethinking Pose Refinement in 3D Gaussian Splatting under Pose Prior and Geometric Uncertainty
     year: '2026'
   zVzxad8AAAAJ:hFOr9nPyWt4C:
