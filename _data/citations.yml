@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-01'
+  last_updated: '2026-05-04'
 papers:
   zVzxad8AAAAJ:-f6ydRqryjwC:
     citations: 17
@@ -18,6 +18,6 @@ papers:
     title: Rethinking Pose Refinement in 3D Gaussian Splatting under Pose Prior and Geometric Uncertainty
     year: '2026'
   zVzxad8AAAAJ:hFOr9nPyWt4C:
-    citations: 1
+    citations: 2
     title: 'GeomGS: LiDAR-Guided Geometry-Aware Gaussian Splatting for Robot Localization'
     year: '2025'
