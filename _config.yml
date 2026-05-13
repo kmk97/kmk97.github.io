@@ -375,7 +375,9 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  # Large publication GIFs under assets/img/ can OOM or time out ImageMagick on GitHub Actions.
+  # Thumbnails still work via <img>; only responsive WebP variants are skipped while this is false.
+  enabled: false
   widths:
     - 480
     - 800
@@ -387,7 +389,7 @@ imagemagick:
     - ".jpeg"
     - ".png"
     - ".tiff"
-    # Skip .gif: animated / large GIFs can fail or stall ImageMagick during CI builds.
+    - ".gif"
   output_formats:
     webp: "-auto-orient -quality 85"
 
