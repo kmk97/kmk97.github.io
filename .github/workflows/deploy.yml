@@ -94,10 +94,22 @@ jobs:
           value: ${{ github.repository }}
       - name: Install and Build 🔧
         run: |
+          set -euo pipefail
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
-          bundle exec jekyll build
+          set +e
+          bundle exec jekyll build --trace --verbose 2>&1 | tee build.log
+          jekyll_ec=${PIPESTATUS[0]}
+          {
+            echo "## Jekyll build (exit code: ${jekyll_ec})"
+            echo ""
+            echo "Last 150 lines of output:"
+            echo '```text'
+            tail -n 150 build.log
+            echo '```'
+          } >> "${GITHUB_STEP_SUMMARY}"
+          exit "${jekyll_ec}"
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
