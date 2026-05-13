@@ -7,8 +7,10 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_bibliography/**"
       - "_sass/**"
       - "_scripts/**"
+      - "**/*.bib"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -36,8 +38,10 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_bibliography/**"
       - "_sass/**"
       - "_scripts/**"
+      - "**/*.bib"
       - "**.bib"
       - "**.html"
       - "**.js"
