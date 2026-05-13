@@ -387,7 +387,7 @@ imagemagick:
     - ".jpeg"
     - ".png"
     - ".tiff"
-    - ".gif"
+    # Skip .gif: animated / large GIFs can fail or stall ImageMagick during CI builds.
   output_formats:
     webp: "-auto-orient -quality 85"
 
