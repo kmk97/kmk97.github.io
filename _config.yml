@@ -369,7 +369,8 @@ external_links:
 #   convert -version
 # Omit .gif from responsive conversion: large GIFs under assets/img/ can OOM GitHub Actions runners.
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  # Disable responsive WebP generation in CI: ImageMagick can OOM on large assets/img GIFs.
+  enabled: false
   widths:
     - 480
     - 800
