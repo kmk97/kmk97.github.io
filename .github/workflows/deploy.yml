@@ -89,7 +89,8 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
-          export JEKYLL_ENV=production
+          # Temporary: production minification/terser may be failing the build on the runner.
+          export JEKYLL_ENV=development
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
