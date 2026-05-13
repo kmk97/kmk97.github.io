@@ -375,9 +375,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  # Large publication GIFs under assets/img/ can OOM or time out ImageMagick on GitHub Actions.
-  # Thumbnails still work via <img>; only responsive WebP variants are skipped while this is false.
-  enabled: false
+  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
     - 480
     - 800
