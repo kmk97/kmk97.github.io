@@ -2,7 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle:
+
+# Selected publications use {% bibliography --group_by none %}; without sort they follow .bib file order.
+scholar:
+  sort_by: year
+  order: descending
 
 profile:
   align: right
