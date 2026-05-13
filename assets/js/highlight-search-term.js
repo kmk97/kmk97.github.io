@@ -48,9 +48,9 @@ const highlightSearchTerm = ({ search, selector, customHighlightName = "search" 
 
   // remove previous highlight
   CSS.highlights.delete(customHighlightName);
-  if (!search || !String(search).trim()) {
-    // nothing to highlight; return empty array so callers can distinguish from "no matches"
-    return [];
+  if (!search) {
+    // nothing to highlight
+    return;
   }
   // find all text nodes containing the search term
   const ranges = [];

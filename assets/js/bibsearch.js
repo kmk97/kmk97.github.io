@@ -5,14 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const filterItems = (searchTerm) => {
     document.querySelectorAll(".bibliography, .unloaded").forEach((element) => element.classList.remove("unloaded"));
 
-    const q = (searchTerm || "").trim().toLowerCase();
-    if (!q) {
-      return;
-    }
-
     // highlight-search-term
     if (CSS.highlights) {
-      const nonMatchingElements = highlightSearchTerm({ search: q, selector: ".bibliography > li" });
+      const nonMatchingElements = highlightSearchTerm({ search: searchTerm, selector: ".bibliography > li" });
       if (nonMatchingElements == null) {
         return;
       }
@@ -23,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Simply add unloaded class to all non-matching items if Browser does not support CSS highlights
       document.querySelectorAll(".bibliography > li").forEach((element, index) => {
         const text = element.innerText.toLowerCase();
-        if (text.indexOf(q) == -1) {
+        if (text.indexOf(searchTerm) == -1) {
           element.classList.add("unloaded");
         }
       });
@@ -56,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const updateInputField = () => {
-    const hashValue = decodeURIComponent(window.location.hash.substring(1)).trim(); // Remove the '#' character
+    const hashValue = decodeURIComponent(window.location.hash.substring(1)); // Remove the '#' character
     document.getElementById("bibsearch").value = hashValue;
     filterItems(hashValue);
   };
@@ -66,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("bibsearch").addEventListener("input", function () {
     clearTimeout(timeoutId); // Clear the previous timeout
     const searchTerm = this.value.toLowerCase();
-    timeoutId = setTimeout(() => filterItems(searchTerm), 300);
+    timeoutId = setTimeout(filterItems(searchTerm), 300);
   });
 
   window.addEventListener("hashchange", updateInputField); // Update the filter when the hash changes
