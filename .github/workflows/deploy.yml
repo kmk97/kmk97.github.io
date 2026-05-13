@@ -8,9 +8,9 @@ on:
     paths:
       - "assets/**"
       - "_bibliography/**"
+      - "**/*.bib"
       - "_sass/**"
       - "_scripts/**"
-      - "**/*.bib"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -39,9 +39,9 @@ on:
     paths:
       - "assets/**"
       - "_bibliography/**"
+      - "**/*.bib"
       - "_sass/**"
       - "_scripts/**"
-      - "**/*.bib"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -85,16 +85,19 @@ jobs:
         with:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
-      - name: Install ImageMagick
-        run: sudo apt-get update && sudo apt-get install -y imagemagick
-      - name: Install nbconvert
-        run: pip3 install --upgrade nbconvert
-      - name: Validate _config.yml (YAML)
-        run: ruby -e "require 'yaml'; YAML.load_file('_config.yml'); puts 'YAML OK'"
-      - name: Jekyll build
+      - name: Update _config.yml ⚙️
+        uses: fjogeleit/yaml-update-action@main
+        with:
+          commitChange: false
+          valueFile: "_config.yml"
+          propertyPath: "giscus.repo"
+          value: ${{ github.repository }}
+      - name: Install and Build 🔧
         run: |
+          sudo apt-get update && sudo apt-get install -y imagemagick
+          pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
-          bundle exec jekyll build --trace
+          bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
