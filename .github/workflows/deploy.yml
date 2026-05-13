@@ -89,10 +89,12 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y imagemagick
       - name: Install nbconvert
         run: pip3 install --upgrade nbconvert
+      - name: Validate _config.yml (YAML)
+        run: ruby -e "require 'yaml'; YAML.load_file('_config.yml'); puts 'YAML OK'"
       - name: Jekyll build
         run: |
           export JEKYLL_ENV=production
-          bundle exec jekyll build
+          bundle exec jekyll build --trace
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
