@@ -44,12 +44,6 @@ external_services:
   github_profile_trophy_url: https://github-profile-trophy.vercel.app
 
 # -----------------------------------------------------------------------------
-# RSS Feed
-# -----------------------------------------------------------------------------
-# will use title and url fields
-# Take a look to https://github.com/jekyll/jekyll-feed for more customization
-
-# -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
 
@@ -128,17 +122,10 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+#
+# Leave empty unless you use this feature: the external-posts plugin fetches
+# these URLs at build time; failures (timeouts, blocks) break CI deploys.
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -214,7 +201,6 @@ plugins:
   - jekyll-archives-v2
   - jekyll-cache-bust
   - jekyll-email-protect
-  - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
   - jekyll-jupyter-notebook
@@ -374,8 +360,10 @@ external_links:
 
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
+# Omit .gif from responsive conversion: large GIFs under assets/img/ can OOM GitHub Actions runners.
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  # Disable responsive WebP generation in CI: ImageMagick can OOM on large assets/img GIFs.
+  enabled: false
   widths:
     - 480
     - 800
@@ -387,7 +375,6 @@ imagemagick:
     - ".jpeg"
     - ".png"
     - ".tiff"
-    - ".gif"
   output_formats:
     webp: "-auto-orient -quality 85"
 
