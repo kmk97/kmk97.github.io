@@ -36,12 +36,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Mangyu Kong, a graduate student in Electrical and Electronic Engineering at Yonsei University, where I also received my B.S. degree in the same field. 
+I am Mangyu Kong, a graduate student in Electrical and Electronic Engineering at Yonsei University, where I also received my B.S. degree in the same field.
 
 My research interests lie in computer vision and robotics, with a primary focus on 3D vision (3D Gaussian Splatting), SLAM, localization, and multi-robot systems.
 
-Recently, I have been expanding my research toward Vision-Language-Action (VLA) models and autonomous navigation, aiming to bridge perception, reasoning, and decision-making in embodied systems. 
+Recently, I have been expanding my research toward Vision-Language-Action (VLA) models and autonomous navigation, aiming to bridge perception, reasoning, and decision-making in embodied systems.
 
 My goal is to develop intelligent robotic systems capable of robust perception and adaptive behavior in complex real-world environments.
-
-
