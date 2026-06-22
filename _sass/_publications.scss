@@ -81,9 +81,11 @@
           }
         }
 
-        > em {
-          border-bottom: 1px solid;
+        em {
+          color: var(--global-theme-color);
+          font-weight: 700;
           font-style: normal;
+          border-bottom: 1px solid var(--global-theme-color);
         }
 
         > span.more-authors {
