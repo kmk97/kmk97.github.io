@@ -36,7 +36,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Mangyu Kong, a student in the integrated M.S.-Ph.D. program in Electrical and Electronic Engineering at Yonsei University and a member of [CILAB](https://cilab.yonsei.ac.kr/). I received my B.S. degree in the same field at Yonsei University.
+I am Mangyu Kong, a Ph.D. student in Electrical and Electronic Engineering at Yonsei University and a member of [CILAB](https://cilab.yonsei.ac.kr/). I received my B.S. degree in the same field at Yonsei University.
 
 My research interests lie in computer vision and robotics, with a primary focus on 3D vision (3D Gaussian Splatting), SLAM, localization, and multi-robot systems.
 
