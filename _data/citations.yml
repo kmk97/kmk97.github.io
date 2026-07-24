@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-06-01'
+  last_updated: '2026-07-24'
 papers:
   zVzxad8AAAAJ:-f6ydRqryjwC:
-    citations: 18
+    citations: 19
     title: 'DGS-SLAM: Gaussian Splatting SLAM in Dynamic Environment'
     year: '2024'
   zVzxad8AAAAJ:IWHjjKOFINEC:
@@ -18,6 +18,10 @@ papers:
     title: Rethinking Pose Refinement in 3D Gaussian Splatting under Pose Prior and Geometric Uncertainty
     year: '2026'
   zVzxad8AAAAJ:hFOr9nPyWt4C:
-    citations: 2
+    citations: 3
     title: 'GeomGS: LiDAR-Guided Geometry-Aware Gaussian Splatting for Robot Localization'
     year: '2025'
+  zVzxad8AAAAJ:iH-uZ7U-co4C:
+    citations: 0
+    title: 'Graph-GSReg: Leveraging 3D Scene Graphs for Gaussian Splatting Registration'
+    year: '2026'
