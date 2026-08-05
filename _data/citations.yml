@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-07-29'
+  last_updated: '2026-08-05'
 papers:
   zVzxad8AAAAJ:-f6ydRqryjwC:
-    citations: 19
+    citations: 20
     title: 'DGS-SLAM: Gaussian Splatting SLAM in Dynamic Environment'
     year: '2024'
   zVzxad8AAAAJ:IWHjjKOFINEC:
@@ -19,7 +19,7 @@ papers:
     year: '2026'
   zVzxad8AAAAJ:hFOr9nPyWt4C:
     citations: 3
-    title: 'GeomGS: LiDAR-Guided Geometry-Aware Gaussian Splatting for Robot Localization'
+    title: 'Geomgs: Lidar-guided geometry-aware gaussian splatting for robot localization'
     year: '2025'
   zVzxad8AAAAJ:iH-uZ7U-co4C:
     citations: 0
