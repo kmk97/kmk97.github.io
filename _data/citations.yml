@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-17'
+  last_updated: '2026-08-21'
 papers:
   zVzxad8AAAAJ:-f6ydRqryjwC:
     citations: 23
@@ -13,10 +13,6 @@ papers:
     citations: 2
     title: 'RoomNeRF: Representing Empty Room as Neural Radiance Fields for View Synthesis'
     year: '2023'
-  zVzxad8AAAAJ:e5wmG9Sq2KIC:
-    citations: 2
-    title: Rethinking Pose Refinement in 3D Gaussian Splatting under Pose Prior and Geometric Uncertainty
-    year: '2026'
   zVzxad8AAAAJ:hFOr9nPyWt4C:
     citations: 3
     title: 'Geomgs: Lidar-guided geometry-aware gaussian splatting for robot localization'
@@ -24,4 +20,8 @@ papers:
   zVzxad8AAAAJ:iH-uZ7U-co4C:
     citations: 0
     title: 'Graph-GSReg: Leveraging 3D Scene Graphs for Gaussian Splatting Registration'
+    year: '2026'
+  zVzxad8AAAAJ:isC4tDSrTZIC:
+    citations: 2
+    title: Rethinking Pose Refinement in 3D Gaussian Splatting under Pose Prior and Geometric Uncertainty
     year: '2026'
